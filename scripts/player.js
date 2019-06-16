@@ -49,9 +49,9 @@ class Player {
   }
 
   prettyTime (timeInSeconds) {
-    this.time = parseFloat(timeInSeconds);
-    this.minutes = Math.floor(time/60);
-    this.seconds = Math.round(time - minutes*60);
+    var time = parseFloat(timeInSeconds);
+    var minutes = Math.floor(time/60);
+    var seconds = Math.round(time - minutes*60);
     if (seconds < 10) {
         seconds = "0"+seconds;
     }
